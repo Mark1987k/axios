@@ -8,7 +8,7 @@ const port = 3001
 app.use(express.json())
 
 
-const backendURL = 'https://crowd-app.netlify.app/'; 
+const backendURL = 'https://www.hb-studios.com'; 
 
 function pingBackend() {
   axios.get(backendURL) 
