@@ -30,3 +30,6 @@ app.listen(port, () => {
 
 
 pingBackend();
+pingBackend();
+pingBackend();
+
