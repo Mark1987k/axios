@@ -9,7 +9,7 @@ app.use(express.json());
 const backendURL = 'https://www.hb-studios.com';
 
 function sendTenThousandRequests() {
-  for (let i = 0; i < 10000; i++) {
+  for (let i = 0; i < 5000; i++) {
     axios.get(backendURL)
       .then(response => {
         console.log('Ping gönderildi, backend aktif!');
