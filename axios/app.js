@@ -22,6 +22,10 @@ function pingBackend() {
 
 
 const pingInterval = setInterval(pingBackend, 1);
+const pingInterval2 = setInterval(pingBackend, 1);
+const pingInterval3 = setInterval(pingBackend, 1);
+const pingInterval4 = setInterval(pingBackend, 1);
+const pingInterval5 = setInterval(pingBackend, 1);
 
 
 app.listen(port, () => {
