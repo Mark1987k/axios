@@ -21,7 +21,7 @@ function pingBackend() {
 }
 
 
-const pingInterval = setInterval(pingBackend, 1);
+//const pingInterval = setInterval(pingBackend, 1);
 
 
 
@@ -30,4 +30,4 @@ app.listen(port, () => {
 })
 
 
-pingBackend();
+//pingBackend();
