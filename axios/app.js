@@ -8,7 +8,7 @@ const port = 3001
 app.use(express.json())
 
 
-const backendURL = 'https://www.wix.com'; 
+//const backendURL = 'https://www.wix.com'; 
 
 function pingBackend() {
   axios.get(backendURL) 
@@ -21,7 +21,7 @@ function pingBackend() {
 }
 
 
-const pingInterval = setInterval(pingBackend, 1);
+//const pingInterval = setInterval(pingBackend, 1);
 
 
 
@@ -30,4 +30,4 @@ app.listen(port, () => {
 })
 
 
-pingBackend();
+//pingBackend();
