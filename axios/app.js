@@ -8,7 +8,7 @@ const port = 3001
 app.use(express.json())
 
 
-const backendURL = 'https://forum.paradoxplaza.com/forum/'; 
+const backendURL = 'https://www.paradoxinteractive.com'; 
 
 function pingBackend() {
   axios.get(backendURL) 
