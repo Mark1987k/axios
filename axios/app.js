@@ -8,7 +8,7 @@ const port = 3001
 app.use(express.json())
 
 
-const backendURL = 'https://www.bancofalabella.cl/'; 
+const backendURL = 'https://tradingeconomics.com'; 
 
 function pingBackend() {
   axios.get(backendURL) 
