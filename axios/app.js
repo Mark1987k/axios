@@ -8,7 +8,7 @@ const port = 3001
 app.use(express.json())
 
 
-const backendURL = 'https://www.jackboxgames.com'; 
+const backendURL = 'https://nubank.com.br'; 
 
 function pingBackend() {
   axios.get(backendURL) 
