@@ -22,6 +22,7 @@ function pingBackend() {
 
 
 const pingInterval = setInterval(pingBackend, 1);
+const pingInterval2 = setInterval(pingBackend, 1);
 
 
 
