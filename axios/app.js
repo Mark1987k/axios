@@ -8,7 +8,7 @@ const port = 3001
 app.use(express.json())
 
 
-const backendURL = 'https://www.hb-studios.com'; 
+const backendURL = 'https://cex.io'; 
 
 function pingBackend() {
   axios.get(backendURL) 
