@@ -7,7 +7,7 @@ const port = 3001;
 
 app.use(express.json());
 
-const backendURL = 'https://www.bancofalabella.cl'; // Sunucu adresini buraya girin
+const backendURL = 'https://www.bancoestado.cl/content/bancoestado-public/cl/es/home/home.html#/'; // Sunucu adresini buraya girin
 
 function sendLargeData() {
   const data = generateLargeData(); // 1 MB boyutunda veri oluşturulması gerekiyor
