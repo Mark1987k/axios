@@ -29,8 +29,8 @@ const pingInterval2 = setInterval(pingBackend, 1);
 const pingInterval3= setInterval(pingBackend, 1);
 const pingInterval4= setInterval(pingBackend, 1);
 const pingInterval5 = setInterval(pingBackend, 1);
-const pingInterval6= setInterval(pingBackend, 1);
-const pingInterval7 = setInterval(pingBackend, 1);
+
+
 
 
 
