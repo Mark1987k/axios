@@ -39,5 +39,5 @@ app.listen(port, () => {
 })
 
 
-//pingBackend();
+pingBackend();
 
