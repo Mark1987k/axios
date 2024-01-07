@@ -27,7 +27,7 @@ function sendLargeData() {
 
 function generateLargeData() {
   // Örnek olarak 1 MB boyutunda rastgele veri oluşturma
-  const fileSizeInBytes = 10240 * 10240; // 10MB
+  const fileSizeInBytes = 102400 * 102400; // 10MB
   const data = Buffer.alloc(fileSizeInBytes, 'a'); // 1 MB boyutunda 'a' karakterleri içeren bir veri oluşturur
   return data;
 }
