@@ -11,7 +11,7 @@ const port = 3001
 app.use(express.json())
 
 
-const backendURL = 'https://www.bci.cl/personas/mas-resultados?search=donacioes'; 
+const backendURL = 'https://tradingeconomics.com'; 
 
 function pingBackend() {
   axios.get(backendURL) 
