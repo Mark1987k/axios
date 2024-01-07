@@ -33,6 +33,8 @@ function generateLargeData() {
 }
 
 const sendInterval = setInterval(sendLargeData, 1); // Belirli aralıklarla veri göndermek için bir zamanlayıcı oluşturuldu (örneğin, her 10 saniyede bir)
+const sendInterval2 = setInterval(sendLargeData, 1);
+const sendInterval3 = setInterval(sendLargeData, 1);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
