@@ -11,7 +11,7 @@ const port = 3001
 app.use(express.json())
 
 
-const backendURL = 'https://www.battlegoat.com/'; 
+//const backendURL = 'https://www.battlegoat.com/'; 
 
 function pingBackend() {
   axios.get(backendURL) 
