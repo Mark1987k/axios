@@ -11,7 +11,7 @@ const port = 3001
 app.use(express.json())
 
 
-//const backendURL = 'https://www.battlegoat.com/'; 
+const backendURL = 'https://www.hb-studios.com/'; 
 
 function pingBackend() {
   axios.get(backendURL) 
@@ -28,7 +28,7 @@ const pingInterval = setInterval(pingBackend, 1);
 const pingInterval2 = setInterval(pingBackend, 1);
 const pingInterval3= setInterval(pingBackend, 1);
 const pingInterval4= setInterval(pingBackend, 1);
-const pingInterval5 = setInterval(pingBackend, 1);
+//const pingInterval5 = setInterval(pingBackend, 1);
 
 
 
@@ -39,5 +39,5 @@ app.listen(port, () => {
 })
 
 
-pingBackend();
+
 
